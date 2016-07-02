@@ -1,6 +1,6 @@
 {
   "name": "alm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./src/main",
   "description": "The only other TypeScript plugin you will ever need.",
   "engines": {
