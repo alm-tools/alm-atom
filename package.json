@@ -1,0 +1,27 @@
+{
+  "name": "alm",
+  "version": "0.0.1",
+  "main": "./src/main",
+  "description": "The only other TypeScript plugin you will ever need.",
+  "engines": {
+    "atom": ">=0.199.0 <2.0.0"
+  },
+  "homepage": "http://atom.io/packages/alm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alm-tools/alm-atom.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alm-tools/alm-atom/issues"
+  },
+  "dependencies": {
+    "alm": "latest"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "css",
+    "html"
+  ]
+}
