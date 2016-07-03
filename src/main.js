@@ -16,6 +16,7 @@ function activate(state) {
                 title: "alm.tools"
             });
             console.log({ url: url, path: path, alm: alm });
+            win.toggleDevTools();
             win.loadURL(url);
             win.on('closed', function () {
                 win = null;
@@ -51,7 +52,7 @@ function activate(state) {
             catch (err) {
                 console.log(err);
             }
-            createWindow("http://localhost:" + port);
+            createWindow("http://127.0.0.1:" + port);
             var _a;
         });
     });

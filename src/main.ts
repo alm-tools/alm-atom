@@ -24,6 +24,7 @@ export function activate(state: PackageState) {
             });
 
             console.log({ url, path, alm }); // DEBUG
+            win.toggleDevTools(); // DEBUG
 
             // and load the index.html of the app.
             win.loadURL(url);
@@ -66,7 +67,7 @@ export function activate(state: PackageState) {
                 console.log(err);
             }
 
-            createWindow(`http://localhost:${port}`);
+            createWindow(`http://127.0.0.1:${port}`);
         })
     });
 }
