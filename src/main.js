@@ -1,4 +1,5 @@
 "use strict";
+var alm = require.resolve('alm/src/server');
 function activate(state) {
 }
 exports.activate = activate;

@@ -23,5 +23,8 @@
     "javascript",
     "css",
     "html"
-  ]
+  ],
+  "devDependencies": {
+    "@types/node": "^4.0.25-alpha"
+  }
 }

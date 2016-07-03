@@ -15,10 +15,9 @@
         "preserveConstEnums": true,
         "suppressImplicitAnyIndexErrors": true
     },
-    "exclude": [
-        "node_modules",
-        "typings/browser",
-        "typings/browser.d.ts"
+    "filesGlob": [
+        "./src/**",
+        "./node_modules/@types/**"
     ],
     "compileOnSave": true,
     "buildOnSave": false,

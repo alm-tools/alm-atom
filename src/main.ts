@@ -1,6 +1,9 @@
+const alm = require.resolve('alm/src/server')
+
 interface PackageState {}
 
 export function activate(state: PackageState) {
+
 }
 
 export function deactivate() {
