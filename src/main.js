@@ -3,7 +3,7 @@ var cp = require('child_process');
 var alm = require.resolve('alm/src/server');
 var getPort_1 = require('alm/src/server/utils/getPort');
 function activate(state) {
-    atom.commands.add('atom-workspace', 'typescript:alm', function (e) {
+    atom.commands.add('atom-workspace', 'alm', function (e) {
         var path = atom.project.getPaths()[0];
         if (!path) {
             atom.notifications.addInfo('You need to have a path open in atom to launch alm');
@@ -17,6 +17,7 @@ function activate(state) {
             });
             console.log({ url: url, path: path, alm: alm });
             win.toggleDevTools();
+            win.maximize();
             win.loadURL(url);
             win.on('closed', function () {
                 win = null;

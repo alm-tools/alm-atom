@@ -7,7 +7,7 @@ import {startPortSearch} from 'alm/src/server/utils/getPort';
 interface PackageState { }
 
 export function activate(state: PackageState) {
-    atom.commands.add('atom-workspace', 'typescript:alm', (e) => {
+    atom.commands.add('atom-workspace', 'alm', (e) => {
         const path = atom.project.getPaths()[0];
         if (!path) {
             atom.notifications.addInfo('You need to have a path open in atom to launch alm');
@@ -25,6 +25,8 @@ export function activate(state: PackageState) {
 
             console.log({ url, path, alm }); // DEBUG
             win.toggleDevTools(); // DEBUG
+
+            win.maximize();
 
             // and load the index.html of the app.
             win.loadURL(url);
